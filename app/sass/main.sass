@@ -1,0 +1,145 @@
+@import vars
+@import fonts
+@import libs
+@import header
+@import slider
+@import button
+@import features-list
+@import control
+@import about
+@import contact-popup
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 24px
+	font-family: 'Arial'
+	overflow-x: hidden
+	color: $text
+
+// Custom Sass / Remove before use
+
+.container
+	max-width: 1140px
+	padding:
+		right: $gutter/2
+		left: $gutter/2
+	margin:
+		left: auto
+		right: auto
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.example-grid
+	display: grid
+	grid-gap: $gutter
+	grid-template-columns: 1fr 1fr
+	grid-template-areas: "left right"
+	> div:first-child
+		grid-area: left
+	> div:last-child
+		grid-area: right
+	+media-breakpoint-down(xs)
+		display: block
+		> div
+			padding: $gutter/2 0
+	
+.example-img
+	width: 100%
+
+.parent // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
+	background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
+
+.visually-hidden:not(:focus):not(:active),
+input:focus.visually-hidden,
+input:active.visually-hidden 
+  position: absolute
+  width: 1px
+  height: 1px
+  margin: -1px
+  border: 0
+  padding: 0
+  white-space: nowrap
+  clip-path: inset(100%)
+  clip: rect(0 0 0 0)
+  overflow: hidden
+  opacity: 0
+  transition: opacity 0.3s ease
+
+.stop-scroll
+  overflow: hidden
+  touch-action: none
+
+.left-padding
+  padding-left: 17px
+
+.overlay
+  position: fixed
+  height: 100vh
+  width: 100vw
+  background: rgba(0, 0, 0, 0.4)
+  left: 0
+  top: 0
+  z-index: 100
+
+.new-flag
+  position: relative
+  overflow: hidden
+
+.new-flag::after 
+  content: "Новинка"
+  position: absolute
+  top: 15px
+  left: 0
+  display: block
+  width: 78px
+  height: 16px
+  font-size: 10px
+  text-transform: uppercase
+  text-align: center
+  vertical-align: middle
+  color: #ffffff
+  background-color: #ff0700
+
+.discount-flag
+  position: relative
+  overflow: hidden
+
+.discount-flag::after 
+  content: "- 20%"
+  position: absolute
+  top: 15px
+  left: 0
+  display: block
+  width: 78px
+  height: 16px
+  font-size: 12px
+  text-align: center
+  vertical-align: middle
+  color: #ffffff
+  background-color: #ff7f00
+
+.thumb-active
+  width: 10px
+  height: 10px
+  border-radius: 50%
+  color: red
+  

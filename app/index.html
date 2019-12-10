@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Giro MSK</title>
+  <meta name="description" content="Startup HTML template OptimizedHTML 5">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="img/favicon.png">
+  <meta property="og:image" content="img/@1x/preview.jpg">
+  <link rel="stylesheet" href="css/styles.min.css">
+  <script src="js/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="grey-wrapper">
+      <div class="container">
+        <div class="row d-flex align-items-center menu-line">
+          <div class="col-md-7 col-lg-5 d-none d-md-block d-lg-block px-0">
+            <nav>
+              <ul class="nav-menu justify-content-start">
+                <li class="nav-menu__item">
+                  <a href="#">Доставка</a>
+                </li>
+                <li class="nav-menu__item">
+                  <a href="#">Оплата</a>
+                </li>
+                <li class="nav-menu__item">
+                  <a href="#">Оптовикам</a>
+                </li>
+                <li class="nav-menu__item">
+                  <a href="#">Отзывы</a>
+                </li>
+                <li class="nav-menu__item">
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-md-2 d-none d-md-block d-lg-none form">
+            <form action="post">
+              <label class="form__label visually-hidden" for="category1">Выберите категорию товара</label>
+              <select class="select select-category" id="category1" name="category1">
+                <option selected value="Велосипеды">Велосипеды</option>
+                <option value="Гироскутеры">Гироскутеры</option>
+                <option value="Смарт-часы">Смарт-часы</option>
+              </select>
+              <label class="form__label visually-hidden" for="search1">Введите название товара</label>
+              <input type="search" class="form__input" id="search1">
+              <div class="form-deco">
+                <span class="form-deco__wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="6" viewBox="0 0 10 6"><g><g><image width="10" height="6" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAzklEQVQYV03NsUrDYBQF4HP+QqGFvIMvkJtApqw6dBQKeQAn96KdfAMHuyi4ODgJDlKoztky/z9pE9z6DC6SyL0lQqFnO5wPDnESEbkwsw+SzyGE29ONxyIi5wA+AYwBOFW9r+t6edz/YZIkM1V9J7kzszuSMzO7cc49eO8Xg+GAzGxNsu267rJpmn1RFKO2bR8BXJNc9X2/ooj8mNneOTf33n9nWTaNoqgry/IvjuMXAFckNwP8AvAWQngdLvI8n1RV9QvA0jQ9U9UnANsDE/dT8842diMAAAAASUVORK5CYII="/></g></g></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="5" viewBox="0 0 10 5"><g><g><image width="10" height="5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAnElEQVQYV03KMQ4BQQBG4fdPMlG4yszONRQKCmdQ0Cg1TkBHg16D0h1EptjZQql0Ag3JjqyEeO375L1/SLoCg5TSrSiKtrX2GWN8hRCWOecRcJJzrm+M2QMXa20/xngHFEJY1HU9ATbGmLkAvPc9YAecgSnQkTTLOa+rqho25gObnHNdSUegltSStCrLcvz9P/iHD5K2KaUG5S98A5HaMfhhhGM1AAAAAElFTkSuQmCC"/></g></g></svg>
+                </span>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-3 d-none d-lg-block px-0">
+            <nav>
+              <ul class="social-menu justify-content-end">
+                <li class="social-menu__item">
+                  <a href="#" class="social-menu__link vk"></a>
+                </li>
+                <li class="social-menu__item">
+                  <a href="#" class="social-menu__link fb"></a>
+                </li>
+                <li class="social-menu__item">
+                  <a href="#" class="social-menu__link tw"></a>
+                </li>
+                <li class="social-menu__item">
+                  <a href="#" class="social-menu__link ok"></a>
+                </li>
+                <li class="social-menu__item">
+                  <a href="#" class="social-menu__link inst"></a>
+                </li>
+                <li class="social-menu__item">
+                  <a href="#" class="social-menu__link youtube"></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-9 d-sm-block d-md-none call-mobile">
+            <p class="call-number">8 (800) 788-17-18</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row align-items-center d-flex justify-content-between logo-line">
+        <div class="col-sm-12 col-md-4 col-lg-3 pr-0 logo">
+          <div class="logo__name">
+            Giro-MSK
+          </div>
+          <div class="logo__text">
+            товары для активного отдыха
+          </div>
+        </div>
+        <div class="col-lg-3 d-none d-lg-block px-0 form">
+          <form action="post">
+            <label class="form__label visually-hidden" for="category">Выберите категорию товара</label>
+            <select class="select select-category" id="category" name="category">
+              <option selected value="Велосипеды">Велосипеды</option>
+              <option value="Гироскутеры">Гироскутеры</option>
+              <option value="Смарт-часы">Смарт-часы</option>
+            </select>
+            <label class="form__label visually-hidden" for="search">Введите название товара</label>
+            <input type="search" class="form__input" id="search">
+            <div class="form-deco">
+              <span class="form-deco__wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="6" viewBox="0 0 10 6"><g><g><image width="10" height="6" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAzklEQVQYV03NsUrDYBQF4HP+QqGFvIMvkJtApqw6dBQKeQAn96KdfAMHuyi4ODgJDlKoztky/z9pE9z6DC6SyL0lQqFnO5wPDnESEbkwsw+SzyGE29ONxyIi5wA+AYwBOFW9r+t6edz/YZIkM1V9J7kzszuSMzO7cc49eO8Xg+GAzGxNsu267rJpmn1RFKO2bR8BXJNc9X2/ooj8mNneOTf33n9nWTaNoqgry/IvjuMXAFckNwP8AvAWQngdLvI8n1RV9QvA0jQ9U9UnANsDE/dT8842diMAAAAASUVORK5CYII="/></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="5" viewBox="0 0 10 5"><g><g><image width="10" height="5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAnElEQVQYV03KMQ4BQQBG4fdPMlG4yszONRQKCmdQ0Cg1TkBHg16D0h1EptjZQql0Ag3JjqyEeO375L1/SLoCg5TSrSiKtrX2GWN8hRCWOecRcJJzrm+M2QMXa20/xngHFEJY1HU9ATbGmLkAvPc9YAecgSnQkTTLOa+rqho25gObnHNdSUegltSStCrLcvz9P/iHD5K2KaUG5S98A5HaMfhhhGM1AAAAAElFTkSuQmCC"/></g></g></svg>
+              </span>
+            </div>
+          </form>
+        </div>
+        <div class="col-sm-3 col-lg-2 d-none d-md-block d-lg-block px-0 ask">
+          <div class="ask__wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="23" viewBox="0 0 23 23"><g><g><image width="23" height="23" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAADTUlEQVRIS52VXWgcVRTHf2cS7HZqSBpasIIIKu2DmVkkFkq0otUHEbS+2Bezs1JEK31qu5MoRWJAiumsgihI8MHuLCLqk6JPgrEKQhWMO7tEKtgXPwotLWm3ptFs5pQ7uxO3bT423reZc+7vf+6555wrrLIKJWeviHUQ1AU2A13AInAJqIG+F3jVT1dCyHKGQik7LKIBcFubPW6BjYDV9v+8okeLXvX9G1k3wf3Q/Rx4suU4i+gXLFrl+Jbun3rqzNV7sLvihWy8KM+K6F6gv+X7deBFj7YLXAf3Q+cHkJ1ADPJ24FUOr5Y2YxsJ3dcVRoFu0JnAq96b7lmC+yX3M4SngHnQxwOvenItcGo/csIZtCwx/puAqcCL9hhbAvdD5xmQT0zElsS7J3K17zsFp36F0B0QmDYnUJUDxXxlsgV3zwFbVWWimK+8vF5w6j9SdkZV5Q2US/aZqF/80HkC5EvzI8hHff8XnO7zw2aggnjih+5XwGOq8kExX9nfTFPyb6hjIWE6yEUPNvdm3wI9BPqjgZ8HtojKnuP5ylRSAWXnaVVrEGJT22ssy0KpBfnKx8axlfsq6GUD/9d03ry1cfM7w6cuG4fXJgftWZvetbCpvXfD1fr4vpkr5nts6uHuud8vzpliMXDTzg070+gZ3zdjhExaTgH3dwoHfgm8aKAt7wa+IY3csjONvlT9yIf33dndiO/oFB7r4tngudpvSeRjWHN3u/Np5BdMC1sSP5DW92h5YEiRHZ3CVTmTNt3hUnZ7l+hpoG4i/xbYjehkkKseaF3KdwK7AO1AwPRKJfCiJI2F0D0m8ArCz6bO0+68EHjRlvRSrpytd1zzt27rmR1/5JtGcl8l90+E2wV5SVo5MqnpQzga5KJjHUS7rIsfOgdB3gX+tjON/mb7l93nUcw8bsRWV/bN4emZ9QokQd7lXkToRfCDXFRcmoojZfekKg+Zi1AYKnpRbT0CbfW91DPXzfOR0D2tsB1YENFXj+eqE+sR8EP3n2QqwraiF5276SUqhK6plGROoPyF8JHCiU2Zxq9pk60kuCa82aHOIVTGkvz9txZab+hqh8mYN2HFyNt3FkrZF0X0BdB7QOwbHublRMyg+8PONHaYU14DpH1PJH5B1+sAAAAASUVORK5CYII="/></g></g></svg>
+            <a href="#">
+              Задайте нам <br> свой вопрос
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-2 d-none d-md-block d-lg-block px-0 call">
+          <div class="call__wrap">
+            <!-- <?xml version="1.0" encoding="UTF-8" standalone="no"?> -->
+              <!-- <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> -->
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="26px" viewBox="0 0 31 26" enable-background="new 0 0 31 26" xml:space="preserve">  <image id="image0" width="31" height="26" x="0" y="0"
+                  href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAaCAMAAAB4vXe4AAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+              AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB7FBMVEX///+yy4qavGjv9en/
+              //3+/////v+tyIN1oS6Os1Tw9ur+/v6rxoF1oi12oi+Ut131+O/7+/na58nE2KfM3bHq8eGsx4J0
+              oC22zpDa5cd7pTeRtFbW5MOJr0x6pjd1pDCxyon3+fSvyofX5cTb6Myevmvh69LG2qd5pTK2zpKz
+              zIvU4r55pTT1+PH5/PWCq0GryYPv9efw8+iuyYZzoy20yoqQs1Xv9et3ozCtyoeOs1O3z5OIrkv3
+              +vPq8d/V4b16pjXD1aGMsVF0oSyyy4l/qD7m7tnJ2q58pzunw3ityIWuy4jA1J+/0pqcvGl4pDHS
+              4Lxzoi7+/v+DrESLsFD6/fbg6tG+05uoxHr5+/ayyoza5cWux4Owy4jf6c5+qDx2ojHw9Oa90pmd
+              vWrD16T8+/l3ozKMsk/r8uL8/Pp/qT2DrUf//f7d6MqhwHDb5MWNslP09+zb5saDrELv8+WBqkDn
+              7tzg6s+IrknG2KiQtVbA1KGWumKAqj7m7tf2+fLG2qn9/fvz9uuStVl8qDnQ37aXuWJ4pzXd6tDc
+              58l5ozP4+/SYu2HW5MGYumN5pTb09+6Jrk7l7dje6M3N3rTC1qHu9Oh2pjCiv2+oxn7+/vz+//2L
+              sU71+O3g6NCTtlrx9Ong7NTi7NSSs1jK+pkRAAAAAWJLR0QAiAUdSAAAAAd0SU1FB+MMAw0uMK5H
+              K7AAAAIBSURBVCjPdVIHUxNBFH4xd8d3d94FI8lpyKGAPYkF7CLGINgLRrGgnhLUGBsodg0qNkQ0
+              NmzY/6h7u5ugmXFndvbtvve+8maJqldgWlBGiqr8m9LYrgF0o6rF9ItFON2CbYVqVX43ZX5GeGZd
+              hCNGHcyaHUN9UOFZlT/GXTTMsec2cvAmouYGRsFSpsa752H+gkZj4aLFFAWWaAw5kUQoJZqJli5b
+              zsMVLa0rrVW+EIXiMaxeQ6I9sTYlCtdxcPJZzeaYtd4Q+ja0bWz3vTHwwJSlTWmEanm0ORNwWWG0
+              w9lSySqkxTtR38Iouramt20n2gFnpySUvncBu9mxZy+wj6LdPvh+n1wWhbM44M/kYM+hw0dagaOk
+              mVNTpt6ko6fKdMeA4xVifp7wTrqn+nL9XSw+XYMzgXJagns4mz9XcOzzdEG9CFwSGUXiX05iYJCu
+              2FdzQ2wYhotrPdR0vSL/hoebeaJbt++4/N6e6SiE794rSnEMPOMrHzbuZx/wgocjePT4ydNn/DL6
+              HPqYUJN7ITmDLgrjL1+VfOUFvH7zlo1IVcetOk2SRnRk370fY2P1oA9NfPjYO1Hssz99JvoiNJVG
+              EBtl4ElMfiX69t2x0dkvZi1c/XCR/vmrYLXxj0bFRHhYOJbfRGMUHgOPcBNlq3+v0u9uTA7S/1dQ
+              H8hXv/0BteZQQ2bNt3kAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTktMTItMDNUMjA6NDY6NDgtMDc6
+              MDBMi8gbAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE5LTEyLTAzVDIwOjQ2OjQ4LTA3OjAwPdZwpwAA
+              AABJRU5ErkJggg==" />
+              </svg>
+            <div class="call__container">
+              <a href="#" class="call__link">Заказать обратный звонок</a>
+              <p class="call-number">8(800)788-17-18</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center navigation-mobile">
+        <div class="col-lg-12">
+          <span class="burger-toggle"></span>
+          <ul class="navigation-list">
+            <li class="navigation-list__item">
+              <a href="#">Гироскутеры</a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#">Смарт-часы</a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#">Велосипеды</a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#">Спортивная одежда</a>
+            </li>
+            <li class="navigation-list__item orange">
+              <a href="#">Распродажа</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="container main-page mt-4">
+      <div class="row no-gutters slider-line">
+        <div id="block-for-slider" class="col-lg-9 slider d-none d-sm-none d-md-block">
+          <div id="viewport" class="viewport">
+            <ul id="slidewrapper" class="slidewrapper">
+              <li class="slide">
+                <div class="slider-text col-lg-9">
+                  <h2 class="slide__title">Diamondback <br> Горный велосипед</h2>
+                  <p class="slider-description">
+                    Двухподвес профессионального уровня 2016 года! 
+                    Легкая и прочная рама из алюминиевого сплава 
+                    + имеются двойные алюминиевые обода.
+                  </p>
+                  <span class="slide__price">15 990 р</span>
+                  <a href="#" class="button button-green button-slider">Подробнее</a>
+                </div>
+                <picture>
+                  <source media="(max-width: 992px)" srcset="img/_src/slide1@tablet.jpg">
+                  <img src="img/_src/slide1.jpg" srcset="img/_src/slide1.jpg" class="slide-img" alt="1">
+                </picture>
+              </li>
+              <li class="slide"><img src="img/_src/slide2.jpg" alt="2" class="slide-img"></li>
+              <li class="slide"><img src="img/_src/slide3.jpg" alt="3" class="slide-img"></li>
+              <li class="slide"><img src="img/_src/slide4.jpg" alt="4" class="slide-img"></li>
+              <li class="slide"><img src="img/_src/slide5.jpg" alt="4" class="slide-img"></li>
+            </ul>
+            <ul id="nav-btns" class="nav-btns">
+              <li class="slide-nav-btn"></li>
+              <li class="slide-nav-btn"></li>
+              <li class="slide-nav-btn"></li>
+              <li class="slide-nav-btn"></li>
+              <li class="slide-nav-btn"></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 grey-wrapper offer-banner">
+          <div class="special-offer d-flex">
+            <p class="offer-banner__price">
+              Лучшая цена
+            </p>
+            <picture>
+              <source media="(max-width: 768px)" srcset="img/_src/gyro3@mobile.png">
+              <img src="img/_src/gyro3.png" srcset="img/_src/gyro3.png" class="offer-banner__img" alt="Фото товара">
+            </picture>
+            <p class="special-offer__title">
+              Sony SmartWatch 3 SWR50
+            </p>
+            <span class="special-offer__description">Смарт-часы</span>
+            <div class="special-offer__wrap d-flex">
+              <button class="button button-green">Заказать</button>
+              <span class="special-offer__price">24 899 р</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex features">
+        <div class="col-sm-12 col-md-7 col-md-auto col-lg-9">
+          <ul class="features-list d-flex">
+            <li class="features-list__item low-price">
+              <h3 class="features-list__title">Низкие цены</h3>
+              <p class="features-list__text">
+                Цены ниже чем у конкурентов.<br> 
+                Нашли дешевле?<br>
+                Сделаем скидку!<br>
+              </p>
+            </li>
+            <li class="features-list__item delivery">
+              <h3 class="features-list__title">Доставка</h3>
+              <p class="features-list__text">
+                Огранизуем доставку<br> 
+                товара по РФ и Китаю
+              </p>
+            </li>
+            <li class="features-list__item assortment">
+              <h3 class="features-list__title">Большой выбор</h3>
+              <p class="features-list__text">
+                Всегда большой выбор<br>
+                товаров в наличии<br>
+                и под заказ
+              </p>
+            </li>
+            <li class="features-list__item guarantee">
+              <h3 class="features-list__title">Гарантия</h3>
+              <p class="features-list__text">
+                Даем гарантию 3 месяца<br>
+                на весь приобретенный<br> 
+                у нас товар
+              </p>
+            </li>
+            <li class="features-list__item test-drive">
+              <h3 class="features-list__title">Тест-драйв</h3>
+              <p class="features-list__text">
+                Бесплатный тест-драйв<br> 
+                гироскутеров и велосипедов<br> 
+                перед покупкой
+              </p>
+            </li>
+            <li class="features-list__item money-back">
+              <h3 class="features-list__title">Возврат денег</h3>
+              <p class="features-list__text">
+                Веренем деньги в течении<br> 
+                14 дней после покупки,<br> 
+                если товар вас не устроил
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 photo">
+          <div class="photo">
+            <img src="img/_src/bike.jpg" alt="фото велосипед" width="258" height="291">
+          </div>
+        </div>
+        <div class="d-none d-md-block d-lg-none grey-wrapper offer-banner">
+          <div class="special-offer d-flex">
+            <p class="offer-banner__price">
+              Лучшая цена
+            </p>
+            <picture>
+              <source media="(max-width: 768px)" srcset="img/_src/gyro3@mobile.png">
+              <img src="img/_src/gyro3.png" srcset="img/_src/gyro3.png" class="offer-banner__img" alt="Фото товара">
+            </picture>
+            <p class="special-offer__title">
+              Sony SmartWatch 3 SWR50
+            </p>
+            <span class="special-offer__description">Смарт-часы</span>
+            <div class="special-offer__wrap d-flex">
+              <button class="button button-green">Заказать</button>
+              <span class="special-offer__price">24 899 р</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="catalog">
+        <div class="row no-gutters">
+          <div class="col-lg-12">
+            <ul class="control-list navigation-list d-flex">
+              <li class="control-list__item navigation-list__item">
+                <a href="#">Новинки</a>
+              </li>
+              <li class="control-list__item navigation-list__item">
+                <a href="#">Популярное</a>
+              </li>
+              <li class="control-list__item navigation-list__item">
+                <a href="#">Товары со скидкой</a>
+              </li>
+            </ul>
+            <ul class="control-buttons d-none d-lg-block">
+              <li class="nav-btn-left"></li>
+              <li class="nav-btn-right"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="product-list d-flex justify-content-between">
+              <li class="product-list__item new-flag">
+                <picture>
+                  <source media="(max-width: 768px)" srcset="img/_src/bicycle@mobile.png">
+                  <img src="img/_src/bicycle.png" srcset="img/_src/bicycle.png" alt="Фото товара">
+                </picture>
+                <h4 class="product-list__title">
+                  Aspect Ideal 26 VBR
+                </h4>
+                <span class="product-list__description">Горный велосипед</span>
+                <div class="product-wrapper d-flex">
+                  <button class="button button-green">Заказать</button>
+                  <span class="product-list__price">22 799 руб.</span>
+                </div>
+              </li>
+              <li class="product-list__item discount-flag">
+                <img src="img/_src/gyro1.png" alt="Фото товара" width="235" height="160">
+                <h4 class="product-list__title">
+                  Smart Balance K3 (желтый)
+                </h4>
+                <span class="product-list__description">Гироскутер</span>
+                <div class="product-wrapper d-flex">
+                  <button class="button button-green">Заказать</button>
+                  <span class="product-list__price">13 800 руб.</span>
+                </div>
+              </li>
+              <li class="product-list__item">
+                <img src="img/_src/gyro2.png" alt="Фото товара" width="235" height="160">
+                <h4 class="product-list__title">
+                  Smart Balance K3 (желтый)
+                </h4>
+                <span class="product-list__description">Гироскутер</span>
+                <div class="product-wrapper d-flex">
+                  <button class="button button-green">Заказать</button>
+                  <span class="product-list__price">17 400 руб.</span>
+                </div>
+              </li>
+              <li class="product-list__item">
+                <img src="img/_src/watch.png" alt="Фото товара" width="235" height="160">
+                <h4 class="product-list__title">
+                  Sony SmartWatch 3 SWR50
+                </h4>
+                <span class="product-list__description">Смарт-часы</span>
+                <div class="product-wrapper d-flex">
+                  <button class="button button-green">Заказать</button>
+                  <span class="product-list__price">24 899 р</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+        <div class="row">
+          <div class="col-lg-8 about">
+            <h1 class="about__title">Товары для активного отдыха и занятий отдыха</h1>
+            <p class="about__text about__text--first">
+              Наш интернет-магазин в Москве всегда имеет в наличии велотехнику мировых производителей: Merida, Stark, Stels, Trek и другие. На сайте GIRO-MSK.ru, вы найдете то, что ищете, - <br>
+              будь то женские или детские модели, прогулочные или спортивные, мужская техника и аксессуары. Также наш магазин может похвастаться отличным выбором маутинбайков и <br>
+              шоссейных велосипедов. Просто выберите нужный тип, а с остальным поможем мы. Специалисты Велосайта профессионально катаются сами и знают о веломире решительно все!
+            </p>
+            <p class="about__text">
+              Популярность велосипедного катания последние годы в России неизменно растет. Спросом пользуются уже не только детские и профессиональные, но и фэтбайки, складные и горные модели для тех, кто готов к продвинутому уровню катания. При выборе велосипеда важно исходить из учета своих потребностей и принимать во внимание на технические характеристики. Так, если будете кататься только в городской черте, не покупайте громоздкие спортивные байки. А, если вы выбираете езду по пересеченной местности, присмотритесь к моделям с хорошей амортизацией и оборудованием.
+            </p>
+          </div>
+          <div class="col-lg-4 d-none d-lg-block photo-about">
+            <img src="img/_src/people.png" alt="фото">
+          </div>
+        </div>
+    </div>
+  </main>
+  <footer class="grey-wrapper">
+    <div class="container footer-container">
+      <section class="footer">
+        <div class="row d-flex justify-content-between footer-line">
+          <div class="col-lg-2 help">
+            <h3 class="footer-title">Помощь</h3>
+            <ul class="footer-list">
+              <li class="footer-list__item">
+                <a href="#">
+                  Заказ товара на сайте
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#">
+                  Доставка товара
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#">
+                  Как оплатить товар
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 info">
+            <h3 class="footer-title">Информация</h3>
+            <ul class="footer-list">
+              <li class="footer-list__item">
+                <a href="#">
+                  Как выбрать велосипед
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#">
+                  Все о гироскутерах
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#">
+                  Акции
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 footer-about">
+            <h3 class="footer-title">О компании</h3>
+            <ul class="footer-list">
+              <li class="footer-list__item">
+                <a href="#">
+                  Что такое Giro-MSK
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#">
+                  Реквизиты
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#">
+                  Работа и вакансии
+                </a>
+              </li>
+              <li class="footer-list__item">
+                <a href="#">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 footer-social">
+            <h3 class="footer-title">Мы в социальных сетях</h3>
+            <ul class="social-menu d-flex justify-content-start">
+              <li class="social-menu__item">
+                <a href="#" class="social-menu__link vk"></a>
+              </li>
+              <li class="social-menu__item">
+                <a href="#" class="social-menu__link fb"></a>
+              </li>
+              <li class="social-menu__item">
+                <a href="#" class="social-menu__link tw"></a>
+              </li>
+              <li class="social-menu__item">
+                <a href="#" class="social-menu__link ok"></a>
+              </li>
+              <li class="social-menu__item">
+                <a href="#" class="social-menu__link inst"></a>
+              </li>
+              <li class="social-menu__item">
+                <a href="#" class="social-menu__link youtube"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 d-flex footer-contacts">
+            <div class="address-wrap">
+              <h3 class="footer-title address-wrap__title ">Контакты</h3>
+              <p class="footer__address">
+                г. Благовещенск ул. Амурская, д. 204, оф. 5
+              </p>
+              <p class="footer__mobile">
+                +7 (914) 560-66-10
+              </p>
+              <p class="footer__mail">
+                shop@giro-msk.ru
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="row">
+        <section class="copyright d-flex justify-content-between">
+          <div class="col-lg-6 right-line">
+            <div class="copyright-wrap">
+              <p class="copyright__year">© 2010-2016</p>
+              <p class="copyright__name">| GIRO-MSK</p>
+            </div>
+            <p class="copyright__text">
+              Любое копирование информации не для нашего промо запрещены без письменного разрешения.
+            </p>
+          </div>
+          <div class="col-lg-2 d-flex right-line">
+            <div class="copyright-container">
+              <p class="copyright__spart">
+                Сделано в 
+                <a href="https://sp-artgroup.ru/" target="blank">SP-ArtGroup</a><br>
+              </p>
+              <p class="copyright__text">
+                Все права защищены
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </footer>
+
+  <section class="overlay visually-hidden" id="modalId">
+    <div class="contact-popup fixed-overlay">
+      <div class="contact-popup contact-popup--modal">
+        <div class="popup-wrap">
+          <button class="button-close button" aria-label="кнопка закрытия слайда">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="18" viewBox="0 0 20 18"><g><g><image width="20" height="18" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAACUUlEQVQ4T6VU32vTUBQ+N6mtq2lCm2Vxq06KD/PP8Wn4sgfXPrSWoeKqyGTUid3WCa7Fh+qUMRD/Iv8Acf2VpD+yFdqi7Y6cmJQsjY7phQs3Oed+5zvnfPcw+M+FiAwAaCNjzPr452WDAQE5IBYgIl4BgBGdyUiObqfLRHQAg4yxH85FROQAgAeAM3tbJncQRCQ7RSafyXIAA4yxkcMMEWe2Pxz2W90T2Ezfj0mSZNo3rEw6nUH89cfK96gowZK8GlheZmNvylaKLkA+t7M/qhoGqOocvMqsKpFIpE2XDMO4tnv4pVfTdLihKJC9d3cmkUgMzwF6a4SIAdM0hfz7o25d1+GWIsOLTJKYnqwXS2a12YzcVOfh5VoqHg6Hm+60idZUAwiQSmCaZnSr8umrprcWVFmGMTDQ2m2YVRXYfpBSBUEwvLUlQM5bWEScNEnXdaFw8LlXN3TgeR7iUQmeZ5KSLMunvrLxMqTuMcbGrnpyjwv747qhAc8HIB4VYW8jRz5nfmSmhG1LJgAAP9uDwUKhXKlqugG/UwYrZUVVG/nUyh1i6a6/RcKnIfSPAOFRsXTc0A11cTYGz7LZpXE/VNs7Kp8eNxrcojoP+bXkdUEQtCkd+oByuZ3SoNFpBWVZhq10+rYkXf1mpxlaL5aHNU0j2eBmNjknimLLVza2+i3l598ddHv9vrSRWpFisVjPEzT4ZPftkDEO3jx9KDLGJvZzKbu7i4gh+9nRG59MFGeqkLToTD5Tw+Eyj/8iXy/DKU1eBOC1/3UeOsL9E6jfiPsFgnkrII4xH2cAAAAASUVORK5CYII="/></g></g></svg>
+          </button>
+          <h2 class="contact-popup__title">
+            Обратный звонок
+          </h2>
+        </div>
+        <form class="contact-filter" method="post" action="https://echo.htmlacademy.ru">
+          <fieldset class="contact-filter__item contact-filter__item--bio">
+            <div class="contact-filter__wrapper">
+              <label class="contact-filter__label" for="name1">Ваше имя</label>
+              <input class="contact-filter__input contact-filter__input--name" id="name1" type="text" name="name" value="" placeholder="Александр" required>
+              <label class="contact-filter__label" for="phone1">Телефон</label>
+              <input class="contact-filter__input contact-filter__input--phone" id="phone1" name="phone-number" type="tel"
+                pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required minlength="18" maxlength="18" value="" placeholder="+7 920 455 66 55">
+            </div>
+          </fieldset> 
+          <div class="contact-popup__wrap">
+            <button type="submit" class="button button-green contact-filter__button">Заказать</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/scripts.min.js"></script>
+
+</body>
+</html>
+        

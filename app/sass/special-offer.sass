@@ -1,0 +1,69 @@
+.special-offer
+  height: 100%
+  flex-direction: column
+  padding: 38px 18px 22px 18px
+
+.offer-banner__price
+  position: relative
+  margin: 0
+  margin-bottom: 60px
+  font-size: 24px
+  font-weight: 700
+  text-transform: uppercase
+  color: #75a22e
+  text-align: center
+
+.offer-banner__price::before
+  position: absolute
+  content: ""
+  display: block
+  width: 40px
+  height: 4px
+  background-color: #80b20d
+  left: 90px
+  top: 37px
+
+.special-offer__wrap
+  justify-content: space-between
+  margin-top: auto
+
+.special-offer__price
+  font-size: 24px
+  font-weight: 400
+
+.offer-banner
+  width: 261px
+  margin-left: auto
+
+@media screen and (max-width: 992px)
+  .offer-banner
+    display: none
+
+@media screen and (max-width: 767px)
+  .offer-banner
+    display: block
+    width: 291px
+    height: 412px
+    margin: 0 auto
+
+  .special-offer__price
+    font-size: 27px
+
+  .offer-banner__img
+    display: block
+    margin: 0 auto   
+
+  .special-offer__title
+    font-size: 16px
+    // margin-bottom: 8px
+    margin-top: 70px 
+
+  .offer-banner__price
+    font-size: 27px
+
+  .offer-banner__price::before
+    left: 105px
+    top: 45px
+
+
+

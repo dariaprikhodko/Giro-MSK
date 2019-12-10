@@ -1,0 +1,280 @@
+.features 
+  margin-top: 50px
+
+  .col-lg-9
+    padding-left: 40px
+
+.features-list
+  width: auto
+  flex-wrap: wrap
+  list-style: none
+  padding-left: 0
+  margin-bottom: 0
+  justify-content: space-between
+
+.features-list__title
+  color: #75a22e
+  font-size: 17px
+  font-weight: bold
+  line-height: 14px
+  text-transform: uppercase
+
+.features-list__item
+  margin-bottom: 30px
+  width: 233px
+  padding-top: 14px
+  padding-left: 34px
+  padding-right: 8px
+  // margin-right: 55px
+
+  // &:nth-child(3n),
+  // &:nth-child(6n)
+  //   margin-right: 10px
+
+.low-price,
+.delivery,
+.assortment,
+.guarantee,
+.test-drive,
+.money-back
+  position: relative
+  font-size: 13px
+  line-height: 14px
+
+.low-price::before,
+.delivery::before,
+.assortment::before,
+.guarantee::before,
+.test-drive::before,
+.money-back::before
+  position: absolute
+  content: ""
+  display: block
+  width: 233px
+  height: 86px
+  left: 0
+  top: 0
+  background-image: url("../img/_src/block.svg")
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  font-size: 0
+
+.low-price::after
+  position: absolute
+  content: ""
+  display: block
+  width: 55px
+  height: 50px
+  left: -10%
+  top: 20%
+  background-image: url("../img/_src/low-price.svg")
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  font-size: 0
+  opacity: 0.5
+
+.delivery::after
+  position: absolute
+  content: ""
+  display: block
+  width: 56px
+  height: 47px
+  left: -10%
+  top: 20%
+  background-image: url("../img/_src/delivery.svg")
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  font-size: 0
+  opacity: 0.5
+
+.assortment::after
+  position: absolute
+  content: ""
+  display: block
+  width: 54px
+  height: 47px
+  left: -10%
+  top: 20%
+  background-image: url("../img/_src/assortment.svg")
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  font-size: 0
+  opacity: 0.5
+
+.guarantee::after
+  position: absolute
+  content: ""
+  display: block
+  width: 41px
+  height: 47px
+  left: -10%
+  top: 20%
+  background-image: url("../img/_src/guarantee.svg")
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  font-size: 0
+  opacity: 0.5
+
+.test-drive::after
+  position: absolute
+  content: ""
+  display: block
+  width: 59px
+  height: 43px
+  left: -10%
+  top: 20%
+  background-image: url("../img/_src/test-drive.svg")
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  font-size: 0
+  opacity: 0.5
+
+.money-back::after
+  position: absolute
+  content: ""
+  display: block
+  width: 50px
+  height: 51px
+  left: -10%
+  top: 20%
+  background-image: url("../img/_src/save-time.svg")
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  font-size: 0
+  opacity: 0.5
+
+@media screen and (max-width: 992px)
+  .photo
+    display: none
+
+  .features-list
+    width: 440px
+    justify-content: initial
+    // width: auto
+    .col-lg-9
+      padding-left: 30px
+      padding-right: 0
+
+  .features-list__item
+    width: 189px
+    padding-left: 28px
+    margin-right: 40px
+    &:nth-child(2n),
+    &:nth-child(4n),
+    &:nth-child(6n)
+      margin-right: 0
+
+  .features-list__text
+    font-size: 12px
+    line-height: 12px
+
+  .features-list__title
+    font-size: 15px
+
+  .low-price::before,
+  .delivery::before,
+  .assortment::before,
+  .guarantee::before,
+  .test-drive::before,
+  .money-back::before
+    width: 189px
+    height: 77px
+
+  .low-price::after
+    width: 44px
+    height: 45px
+
+  .delivery::after
+    width: 46px
+    height: 42px
+
+  .guarantee::after
+    width: 44px
+    height: 42px
+
+  .test-drive::after
+    width: 47px
+    height: 39px
+
+  .assortment::after
+    width: 43px
+    height: 42px
+
+  .money-back::after
+    width: 41px
+    height: 46px
+    
+@media screen and (max-width: 767px)
+  .features-list
+    margin: 0 auto
+    justify-content: space-between
+
+
+  .features-list__item
+    width: 123px
+    padding-left: 26px
+    // margin-bottom: 35px
+    // padding-top: 14px
+    // padding-left: 34px
+    // padding-right: 8px
+    // margin-right: 25px
+
+    // &:nth-child(3n)
+    //   margin-right: 25px
+
+    // &:nth-child(2n),
+    // &:nth-child(4n),
+    // &:nth-child(6n)
+    //   margin-right: 6px
+
+    // &:nth-child(5n),
+    // &:nth-child(6n)
+    //   margin-bottom: 25px
+
+  .features-list__text
+    display: none
+
+  .features-list__title
+    font-size: 14px
+    font-weight: bold
+    text-transform: uppercase
+
+  .low-price::before,
+  .delivery::before,
+  .assortment::before,
+  .guarantee::before,
+  .test-drive::before,
+  .money-back::before
+    width: 123px
+    height: 50px
+
+  .low-price::after
+    width: 29px
+    height: 29px
+
+  .delivery::after
+    width: 30px
+    height: 27px
+
+  .guarantee::after
+    width: 22px
+    height: 27px
+
+  .test-drive::after
+    width: 30px
+    height: 25px
+
+  .assortment::after
+    width: 28px
+    height: 28px
+
+  .money-back::after
+    width: 27px
+    height: 30px
+
+  .features 
+    margin-top: 20px
+
+    .col-lg-9
+      padding-left: 20px
+

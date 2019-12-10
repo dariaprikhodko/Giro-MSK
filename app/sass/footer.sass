@@ -1,0 +1,174 @@
+footer 
+  margin-top: 5px
+  padding-bottom: 10px
+
+  .social-menu
+    justify-content: flex-start
+
+.footer
+  padding-top: 30px
+
+.footer-container
+  padding-left: 0
+  padding-right: 0
+
+.footer-title
+  margin: 0
+  margin-bottom: 6px
+  font-size: 13px
+  font-style: bold
+
+.footer-list__item
+  line-height: 20px
+  a 
+    color: #848181
+    font-size: 13px
+    font-weight: 400
+
+    &:hover
+      color: #848181
+      text-decoration: underline
+
+.footer-list
+  list-style: none
+  padding-left: 0
+
+.footer__address,
+.footer__mobile,
+.footer__mail
+  position: relative
+  margin: 0
+
+.footer__address::before
+  position: absolute
+  content: ""
+  display: block
+  width: 17px
+  height: 19px
+  left: -25px
+  top: 5px
+  background-image: url("../img/_src/address.png")
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  font-size: 0
+
+.footer__mobile::before
+  position: absolute
+  content: ""
+  display: block
+  width: 17px
+  height: 17px
+  left: -25px
+  top: 5px
+  background-image: url("../img/_src/phone.png")
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  font-size: 0
+
+.footer__mail::before
+  position: absolute
+  content: ""
+  display: block
+  width: 18px
+  height: 14px
+  left: -25px
+  top: 5px
+  background-image: url("../img/_src/mail.png")
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  font-size: 0
+
+.address-wrap 
+  flex-direction: column
+  margin-left: auto
+  padding-left: 30px
+  line-height: 24px
+
+.copyright
+  width: 100%
+  padding-top: 25px
+  border-top: 1px solid #848181
+
+.copyright__text,
+.copyright__year
+  color: #989898
+  font-family: Tahoma
+  font-size: 12px
+  font-weight: 400
+  line-height: 18px
+
+  a
+    color: #892b96
+
+.copyright__year
+  margin: 0
+  margin-right: 4px
+
+.copyright__name
+  margin: 0
+  color: #4e4d4c
+  font-size: 14px
+  letter-spacing: 0.35px
+
+.address-wrap__title
+  margin-left: -20px
+
+.copyright-wrap
+  display: flex
+  align-items: center
+
+.copyright-container
+  margin-left: auto
+
+@media screen and (max-width: 992px)
+  .footer-container
+    padding-left: 16px
+    padding-right: 16px
+
+  .help
+    display: none
+
+  .info
+    display: none
+  
+  .footer-contacts,
+  .footer-social,
+  .footer-about
+    width: auto !important
+
+@media screen and (max-width: 767px)
+  .footer-about,
+  .copyright__text
+    display: none
+
+  .footer-line
+    flex-direction: column-reverse
+
+  .address-wrap
+    padding-left: 15px
+    margin-bottom: 20px
+
+  .footer__address::before,
+  .footer__mobile::before,
+  .footer__mail::before
+    left: -18px
+
+  .address-wrap__title
+    margin-bottom: 0
+
+  .social-menu
+    margin-bottom: 15px
+
+  .copyright__text,
+  .copyright__year
+    font-size: 11px
+    
+  .right-line
+    width: auto
+
+  .copyright__spart
+    font-size: 12px
+    line-height: 18px
+
+  .copyright-container
+    width: 80px

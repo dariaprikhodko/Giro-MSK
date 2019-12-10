@@ -1,0 +1,455 @@
+.main-page 
+  padding-left: 0 !important
+  padding-right: 0 !important
+
+.nav-menu__item
+  text-decoration: none
+
+.nav-menu
+  display: flex
+
+.nav-menu,
+.social-menu
+  list-style: none
+  padding: 0
+  margin: 0
+  display: flex
+
+.menu-line
+  justify-content: space-between
+
+.grey-wrapper
+  background-color: #f1f1f1
+
+.nav-menu__item
+  margin-right: 35px
+  color: #000000
+  padding-top: 12px
+  padding-bottom: 12px
+  transition: all .2s ease-in-out
+
+  a
+    color: #2d2d2d
+
+  &:last-child 
+    margin-right: 0
+
+  &:hover
+    text-decoration: underline
+
+.social-menu__item
+  margin-left: 10px
+
+.vk
+  background-image: url("../img/_src/vk.png")
+  display: block
+  width: 23px
+  height: 23px
+  background-repeat: no-repeat
+  background-size: 23px 23px
+  font-size: 0
+  transition: all .2s ease
+
+  &:hover 
+    background-image: url("../img/_src/vk-h.png")
+  
+.fb
+  background-image: url("../img/_src/fb.png")
+  display: block
+  width: 23px
+  height: 23px
+  background-repeat: no-repeat
+  font-size: 0
+  transition: all .2s ease
+
+  &:hover 
+    background-image: url("../img/_src/fb-h.png")
+
+.tw
+  background-image: url("../img/_src/tw.png")
+  display: block
+  width: 23px
+  height: 23px
+  background-repeat: no-repeat
+  font-size: 0
+  transition: all .2s ease
+
+  &:hover 
+    background-image: url("../img/_src/tw-h.png")
+
+.ok
+  background-image: url("../img/_src/ok.png")
+  display: block
+  width: 23px
+  height: 23px
+  background-repeat: no-repeat
+  font-size: 0
+  transition: all .2s ease
+
+  &:hover 
+    background-image: url("../img/_src/ok-h.png")
+
+.inst
+  background-image: url("../img/_src/inst.png")
+  display: block
+  width: 23px
+  height: 23px
+  background-repeat: no-repeat
+  font-size: 0
+  transition: all .2s ease
+
+  &:hover 
+    background-image: url("../img/_src/inst-h.png")
+
+.youtube
+  background-image: url("../img/_src/youtube.png")
+  display: block
+  width: 23px
+  height: 23px
+  background-repeat: no-repeat
+  font-size: 0
+  transition: all .2s ease
+
+  &:hover 
+    background-image: url("../img/_src/youtube-h.png")
+
+.logo__name
+  font-family: Gotham
+  font-size: 36px
+  font-weight: 500
+  text-transform: uppercase
+
+.logo__text
+  font-size: 12px
+
+.logo
+  position: relative
+  padding-left: 55px
+
+.logo::before
+  position: absolute
+  content: ""
+  display: block
+  width: 44px
+  height: 43px
+  left: 0
+  top: 0
+  background-image: url("../img/_src/logo.png")
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  font-size: 0
+
+.logo-line
+  padding-top: 30px
+  padding-bottom: 20px
+
+.form__input
+  width: 320px
+  padding-left: 180px
+  padding-top: 6px
+  padding-bottom: 4px
+  border: 1px solid #848181
+  box-sizing: border-box
+
+.form
+  position: relative
+  display: block
+  width: 320px
+  box-sizing: border-box
+
+.form::before
+  position: absolute
+  content: ""
+  display: block
+  width: 1px
+  height: 26px
+  left: 138px
+  top: 2px
+  background-color: #848181
+
+.form::after
+  position: absolute
+  content: ""
+  display: block
+  width: 19px
+  height: 19px
+  right: -30px
+  top: 7px
+  background-image: url("../img/_src/zoom.svg")
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  font-size: 0
+
+.form-deco
+  position: relative
+
+.form-deco__wrap
+  position: absolute
+  display: flex
+  flex-direction: column
+  bottom: 13px
+  left: 117px
+  height: 18px
+  justify-content: space-between
+
+.ask,
+.call
+  a
+    color: #2d2d2d 
+
+.ask
+  position: relative
+  a 
+    display: block
+    margin-left: auto
+    font-size: 12px
+    line-height: 18px
+    text-transform: uppercase
+    letter-spacing: 0.3px
+    font-weight: bold
+    text-decoration: underline dashed #2d2d2d
+    transition: all .2s ease-in-out
+
+    &:hover
+      opacity: 0.6
+
+.call
+  position: relative
+  display: flex
+  width: 100%
+  // align-items: flex-end
+  a 
+    font-size: 13px
+    text-decoration: underline dashed #2d2d2d
+    transition: all .2s ease-in-out
+
+    &:hover
+      opacity: 0.6
+
+.call-number
+  font-size: 20px
+  font-family: Roboto
+  font-weight: 700
+
+.navigation-list
+  display: flex
+  width: 100%
+  list-style: none
+  background-color: #a234cf
+  overflow: hidden
+  margin-bottom: 0
+
+.navigation-list__item
+  margin-right: 30px
+  padding-top: 15px
+  padding-bottom: 21px
+  padding-left: 10px
+  padding-right: 12px
+  transform: skew(-20deg)
+  transition: all .2s ease
+
+  &:last-child
+    margin-left: auto
+    margin-right: 0
+    background-repeat: no-repeat
+    background-size: 100% 100%
+    font-size: 0
+    background-color: #ff7f00
+
+    &:hover
+      background-color: #ff7f00
+      opacity: 0.9
+
+  a 
+    display: block
+    color: #ffffff
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 0.35px
+
+  &:hover
+    background-color: #6f177c
+    cursor: pointer
+
+.orange
+  padding-left: 40px
+  padding-right: 30px
+
+.orange::before
+  position: absolute
+  content: ""
+  display: block
+  width: 0
+  height: 0
+  top: 0
+  right: -7px
+  border-bottom: 70px solid #ff7f00
+  border-left: 70px solid transparent
+  transform: skew(20deg)
+
+.navigation-list__item a 
+  text-decoration: none
+  transform: skew(20deg)
+
+.ask__wrap
+  position: relative
+  display: flex
+  svg
+    position: absolute
+    display: block
+    top: 20%
+    left: 50px
+
+.call__wrap
+  display: flex
+  svg
+    position: absolute
+    display: block
+    top: 30%
+    left: -15px
+
+.call__container
+  display: flex
+  flex-direction: column
+  margin-left: auto
+
+.select
+  position: absolute
+  display: block
+  max-width: 100%
+  top: 5px
+  left: 20px
+  color: #848181
+  box-sizing: border-box
+  background-color: transparent
+  border: none
+  appearance: none
+  &:hover
+  &:focus
+    background-color: #ffffff
+
+@media screen and (max-width: 992px)
+  .main-page
+    padding-left: 16px !important
+    padding-right: 16px !important
+
+  .menu-line
+    justify-content: flex-start
+    padding-left: 16px 
+    padding-right: 16px
+
+  .logo-line
+    flex-direction: row
+    padding-left: 16px 
+    padding-right: 16px
+
+  .logo
+    padding-left: 30px
+
+  .logo,
+  .ask,
+  .call
+    width: auto
+
+  .logo
+    text-align: center
+
+  .navigation-list__item
+    &:last-child
+      display: none
+
+  .form__input
+    width: 294px
+
+  .ask__wrap
+    svg
+      left: 60px
+
+  .call__wrap
+    svg
+      left: 50px
+
+  .form::after
+    right: -165px
+
+  .form-deco__wrap
+    left: 110px
+
+@media screen and (max-width: 767px)
+  .navigation-list__item
+    display: none
+
+  .navigation-list
+    display: block
+    height: 56px
+    padding: 0
+
+  .logo
+    margin: 0 auto
+
+  .call-number
+    margin: 0
+
+  .call-mobile
+    position: relative
+    padding: 0
+    padding-top: 10px
+    padding-bottom: 10px
+    padding-left: 30px
+
+  .call-mobile::after
+    position: absolute
+    content: ""
+    display: block
+    width: 17px
+    height: 16px
+    left: 0
+    top: 15px
+    background-image: url("../img/_src/mobile-call.png")
+    background-repeat: no-repeat
+    background-size: 100% 100%
+    font-size: 0
+
+  .call-mobile::before
+    position: absolute
+    content: ""
+    display: block
+    width: 17px
+    height: 17px
+    right: -60px
+    top: 15px
+    background-image: url("../img/_src/zoom.svg")
+    background-repeat: no-repeat
+    background-size: 100% 100%
+    font-size: 0
+
+  .logo-line
+    padding-top: 40px
+    padding-bottom: 30px
+
+  .logo::before
+    left: -25px
+
+  .burger-toggle
+    position: absolute
+    display: block
+    width: 26px
+    height: 22px
+    right: 46%
+    top: 40%
+    background-image: url("../img/_src/burger.png")
+    background-repeat: no-repeat
+    background-size: 100% 100%
+    font-size: 0
+    &:hover
+      cursor: pointer
+      opacity: 0.6
+
+
+  // .navigation-mobile
+  //   padding-left: 16px
+  //   padding-right: 16px
+
+
+
