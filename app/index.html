@@ -10,7 +10,6 @@
   <link rel="icon" href="img/favicon.png">
   <meta property="og:image" content="img/@1x/preview.jpg">
   <link rel="stylesheet" href="css/styles.min.css">
-  <script src="js/jquery.min.js"></script>
 
 </head>
 
@@ -19,8 +18,8 @@
     <div class="grey-wrapper">
       <div class="container">
         <div class="row d-flex align-items-center menu-line">
-          <div class="col-md-7 col-lg-5 d-none d-md-block d-lg-block px-0">
-            <nav>
+          <div class="col-md-7 col-lg-5 px-0 d-none d-md-block d-lg-block">
+            <nav class="main-nav">
               <ul class="nav-menu justify-content-start">
                 <li class="nav-menu__item">
                   <a href="#">Доставка</a>
@@ -98,6 +97,28 @@
             товары для активного отдыха
           </div>
         </div>
+        <div class="col-md-7 col-lg-5 px-0 d-block d-md-none d-lg-none">
+            <nav class="main-nav main-nav--closed">
+              <div class="icon-burger"></div>
+              <ul class="nav-menu justify-content-start">
+                <li class="nav-menu__item">
+                  <a href="#">Доставка</a>
+                </li>
+                <li class="nav-menu__item">
+                  <a href="#">Оплата</a>
+                </li>
+                <li class="nav-menu__item">
+                  <a href="#">Оптовикам</a>
+                </li>
+                <li class="nav-menu__item">
+                  <a href="#">Отзывы</a>
+                </li>
+                <li class="nav-menu__item">
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         <div class="col-lg-3 d-none d-lg-block px-0 form">
           <form action="post">
             <label class="form__label visually-hidden" for="category">Выберите категорию товара</label>
@@ -161,8 +182,7 @@
         </div>
       </div>
       <div class="row align-items-center navigation-mobile">
-        <div class="col-lg-12">
-          <span class="burger-toggle"></span>
+        <div class="col-lg-12 d-none d-md-block d-lg-block">
           <ul class="navigation-list">
             <li class="navigation-list__item">
               <a href="#">Гироскутеры</a>
@@ -186,21 +206,20 @@
   </header>
 
   <main>
-
-    <div class="container main-page mt-4">
+    <div class="container main-page">
       <div class="row no-gutters slider-line">
         <div id="block-for-slider" class="col-lg-9 slider d-none d-sm-none d-md-block">
           <div id="viewport" class="viewport">
             <ul id="slidewrapper" class="slidewrapper">
               <li class="slide">
-                <div class="slider-text col-lg-9">
+                <div class="slider-text">
                   <h2 class="slide__title">Diamondback <br> Горный велосипед</h2>
                   <p class="slider-description">
                     Двухподвес профессионального уровня 2016 года! 
                     Легкая и прочная рама из алюминиевого сплава 
                     + имеются двойные алюминиевые обода.
                   </p>
-                  <span class="slide__price">15 990 р</span>
+                  <span class="slide__price">15 990 <span class="slide__currency">р</span></span>
                   <a href="#" class="button button-green button-slider">Подробнее</a>
                 </div>
                 <picture>
@@ -214,7 +233,7 @@
               <li class="slide"><img src="img/_src/slide5.jpg" alt="4" class="slide-img"></li>
             </ul>
             <ul id="nav-btns" class="nav-btns">
-              <li class="slide-nav-btn"></li>
+              <li class="slide-nav-btn active"></li>
               <li class="slide-nav-btn"></li>
               <li class="slide-nav-btn"></li>
               <li class="slide-nav-btn"></li>
@@ -223,8 +242,8 @@
           </div>
         </div>
 
-        <div class="col-lg-3 grey-wrapper offer-banner">
-          <div class="special-offer d-flex">
+        <div class="col-lg-3 offer-banner d-block d-md-none d-lg-block">
+          <div class="special-offer d-flex grey-wrapper">
             <p class="offer-banner__price">
               Лучшая цена
             </p>
@@ -249,7 +268,7 @@
             <li class="features-list__item low-price">
               <h3 class="features-list__title">Низкие цены</h3>
               <p class="features-list__text">
-                Цены ниже чем у конкурентов.<br> 
+                Цены&nbsp;ниже&nbsp;чем&nbsp;у&nbsp;конкурентов.<br> 
                 Нашли дешевле?<br>
                 Сделаем скидку!<br>
               </p>
@@ -323,30 +342,30 @@
       <section class="catalog">
         <div class="row no-gutters">
           <div class="col-lg-12">
-            <ul class="control-list navigation-list d-flex">
-              <li class="control-list__item navigation-list__item">
+            <ul class="control-list d-flex">
+              <li class="control-list__item">
                 <a href="#">Новинки</a>
               </li>
-              <li class="control-list__item navigation-list__item">
+              <li class="control-list__item">
                 <a href="#">Популярное</a>
               </li>
-              <li class="control-list__item navigation-list__item">
+              <li class="control-list__item">
                 <a href="#">Товары со скидкой</a>
               </li>
-            </ul>
-            <ul class="control-buttons d-none d-lg-block">
-              <li class="nav-btn-left"></li>
-              <li class="nav-btn-right"></li>
             </ul>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-12">
+            <ul class="control-buttons d-none d-lg-block">
+              <li class="nav-btn-prev"></li>
+              <li class="nav-btn-next"></li>
+            </ul> 
             <ul class="product-list d-flex justify-content-between">
               <li class="product-list__item new-flag">
                 <picture>
-                  <source media="(max-width: 768px)" srcset="img/_src/bicycle@mobile.png">
-                  <img src="img/_src/bicycle.png" srcset="img/_src/bicycle.png" alt="Фото товара">
+                  <source media="(max-width: 992px)" srcset="img/_src/bicycle@mobile.png">
+                  <img src="img/_src/bicycle.png" srcset="img/_src/bicycle.png" alt="Фото товара" class="product-list__img">
                 </picture>
                 <h4 class="product-list__title">
                   Aspect Ideal 26 VBR
@@ -358,7 +377,7 @@
                 </div>
               </li>
               <li class="product-list__item discount-flag">
-                <img src="img/_src/gyro1.png" alt="Фото товара" width="235" height="160">
+                <img src="img/_src/gyro1.png" alt="Фото товара" width="235" height="160" class="product-list__img">
                 <h4 class="product-list__title">
                   Smart Balance K3 (желтый)
                 </h4>
@@ -369,7 +388,7 @@
                 </div>
               </li>
               <li class="product-list__item">
-                <img src="img/_src/gyro2.png" alt="Фото товара" width="235" height="160">
+                <img src="img/_src/gyro2.png" alt="Фото товара" width="235" height="160" class="product-list__img">
                 <h4 class="product-list__title">
                   Smart Balance K3 (желтый)
                 </h4>
@@ -380,7 +399,7 @@
                 </div>
               </li>
               <li class="product-list__item">
-                <img src="img/_src/watch.png" alt="Фото товара" width="235" height="160">
+                <img src="img/_src/watch.png" alt="Фото товара" width="235" height="160" class="product-list__img">
                 <h4 class="product-list__title">
                   Sony SmartWatch 3 SWR50
                 </h4>
@@ -522,10 +541,10 @@
       </section>
       <div class="row">
         <section class="copyright d-flex justify-content-between">
-          <div class="col-lg-6 right-line">
+          <div class="col-md-9 col-lg-6 right-line">
             <div class="copyright-wrap">
-              <p class="copyright__year">© 2010-2016</p>
-              <p class="copyright__name">| GIRO-MSK</p>
+              <p class="copyright__year">©2010-2016 </p>
+              <p class="copyright__name">|GIRO-MSK</p>
             </div>
             <p class="copyright__text">
               Любое копирование информации не для нашего промо запрещены без письменного разрешения.
@@ -547,7 +566,7 @@
     </div>
   </footer>
 
-  <section class="overlay visually-hidden" id="modalId">
+  <section class="overlay visually-hidden modal" tabindex="-1" role="dialog" id="modalId">
     <div class="contact-popup fixed-overlay">
       <div class="contact-popup contact-popup--modal">
         <div class="popup-wrap">
@@ -577,6 +596,7 @@
   </section>
 
   <script src="js/scripts.min.js"></script>
+  <script src="js/jquery.min.js"></script>
 
 </body>
 </html>

@@ -1,23 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
   var slideNow = 1;
   var slideCount = $('#slidewrapper').children().length;
-  var slideInterval = 2000;
   var navBtnId = 0;
+  var productNow = 1;
+  var productCount = $('#slidewrapper-product').children().length;
+  var productBtnId = 0;
+  var navBtn = $('.slide-nav-btn')
 
-  // Логика работы большого слайдер
-  // перелистывание
-  function nextSlide() {
-    if (slideNow == slideCount || slideNow <= 0 || slideNow > slideCount) {
-        $('#slidewrapper').css('transform', 'translate(0, 0)');
-        slideNow = 1;
-    } else {
-        translateWidth = -$('#viewport').width() * (slideNow);
-        $('#slidewrapper').css({
-            'transform': 'translate(' + translateWidth + 'px, 0)',
-        });
-        slideNow++;
-    }
-  }
   // перелистывание по кнопкам
   $('.slide-nav-btn').click(function() {
     navBtnId = $(this).index();
@@ -29,8 +18,16 @@ document.addEventListener("DOMContentLoaded", function() {
         });
         slideNow = navBtnId + 1;
     }
+    // подсвечиваем активную точку
+    $('.slide-nav-btn').each(function () {
+      var navBtnIndex = $(this).index();
+      if (navBtnIndex + 1 === slideNow) {
+        $(this).addClass('active')
+      } else {
+        $(this).removeClass('active')
+      }
+    });
   });
-
 
   // Логика появления модального окна
   // Открыть по клику
@@ -53,9 +50,12 @@ document.addEventListener("DOMContentLoaded", function() {
         $('#modalId').addClass('visually-hidden')
     })
   })
-
-  //Слайдер товаров
-
-
+  // бургер меню
+  $(function(){
+    $('.icon-burger').on('click', function() {
+      $(this).closest('.main-nav').toggleClass('main-nav--opened');
+      $('body').addClass('stop-scroll');
+    });
+  });
 
 });

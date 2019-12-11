@@ -1,6 +1,7 @@
 .main-page 
   padding-left: 0 !important
   padding-right: 0 !important
+  margin-top: 27px
 
 .nav-menu__item
   text-decoration: none
@@ -187,7 +188,7 @@
   position: absolute
   display: flex
   flex-direction: column
-  bottom: 13px
+  bottom: 10px
   left: 117px
   height: 18px
   justify-content: space-between
@@ -217,7 +218,6 @@
   position: relative
   display: flex
   width: 100%
-  // align-items: flex-end
   a 
     font-size: 13px
     text-decoration: underline dashed #2d2d2d
@@ -231,7 +231,8 @@
   font-family: Roboto
   font-weight: 700
 
-.navigation-list
+.navigation-list,
+.control-list
   display: flex
   width: 100%
   list-style: none
@@ -239,7 +240,9 @@
   overflow: hidden
   margin-bottom: 0
 
-.navigation-list__item
+.navigation-list__item,
+.control-list__item
+  position: relative
   margin-right: 30px
   padding-top: 15px
   padding-bottom: 21px
@@ -288,9 +291,28 @@
   border-left: 70px solid transparent
   transform: skew(20deg)
 
-.navigation-list__item a 
-  text-decoration: none
-  transform: skew(20deg)
+.navigation-list__item,
+.control-list__item
+  a 
+    text-decoration: none
+    transform: skew(20deg)
+
+.navigation-list__item::after
+  position: absolute
+  content: ""
+  display: none
+  width: 8px
+  height: 8px
+  left: 0
+  top: 40%
+  background-image: url("../img/_src/cube.svg")
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  font-size: 0
+  transform: rotate(-90deg)
+
+.navigation-list__item:hover::after
+  display: block
 
 .ask__wrap
   position: relative
@@ -329,10 +351,21 @@
   &:focus
     background-color: #ffffff
 
+.navigation-mobile
+  .col-lg-12
+    padding-left: 0
+    padding-right: 0
+
 @media screen and (max-width: 992px)
+  .navigation-mobile
+    .col-lg-12
+      padding-left: 14px
+      padding-right: 14px
+
   .main-page
     padding-left: 16px !important
     padding-right: 16px !important
+    margin-top: 30px
 
   .menu-line
     justify-content: flex-start
@@ -368,7 +401,7 @@
 
   .call__wrap
     svg
-      left: 50px
+      left: 52px
 
   .form::after
     right: -165px
@@ -377,16 +410,21 @@
     left: 110px
 
 @media screen and (max-width: 767px)
+  .main-page
+    margin-top: 0
+
   .navigation-list__item
     display: none
 
-  .navigation-list
+  .navigation-list,
+  .control-list
     display: block
     height: 56px
     padding: 0
 
   .logo
     margin: 0 auto
+    margin-bottom: 35px
 
   .call-number
     margin: 0
@@ -431,13 +469,21 @@
   .logo::before
     left: -25px
 
-  .burger-toggle
+  .icon-burger
+    position: relative
+    width: 26px
+    height: 21px
+    cursor: pointer
+    left: 50%
+    margin-top: 20px
+
+  .icon-burger
     position: absolute
     display: block
     width: 26px
     height: 22px
-    right: 46%
-    top: 40%
+    left: 50%
+    top: 0
     background-image: url("../img/_src/burger.png")
     background-repeat: no-repeat
     background-size: 100% 100%
@@ -446,10 +492,47 @@
       cursor: pointer
       opacity: 0.6
 
+  .nav-menu
+    overflow: auto
+    opacity: 1
 
-  // .navigation-mobile
-  //   padding-left: 16px
-  //   padding-right: 16px
+  .main-nav
+    position: relative
+    display: flex
+    flex-direction: column
+    width: 290px
+    min-height: 51px
+    margin: 0 auto
+    font-size: 18px
+    line-height: 40px
+    background-color: #a234cf
 
+    .main-nav__list 
+      list-style: none
+      margin: 0
+      padding: 0
 
+  .nav-menu
+    flex-direction: column
 
+  .nav-menu__item
+    padding: 0
+    a 
+      display: block
+      padding: 8px 8px
+      color: #ffffff
+      text-transform: uppercase
+      text-decoration: none
+      text-align: left
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+      font-size: 11px
+
+      &:hover
+        background-color: #6d1679
+        text-decoration: none
+
+  .main-nav--closed .nav-menu__item 
+    display: none
+
+  .main-nav--opened .nav-menu__item 
+    display: block

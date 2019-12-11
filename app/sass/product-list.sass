@@ -1,3 +1,6 @@
+.catalog
+  margin-top: 10px
+
 .control-list
   list-style: none
   background-color: #75a22e
@@ -80,7 +83,7 @@
   bottom: 15px
   background-color: #ffffff
 
-.nav-btn-left
+.nav-btn-prev
   position: absolute
   display: block
   width: 27px
@@ -94,7 +97,7 @@
   &:hover
     opacity: 0.6
 
-.nav-btn-right
+.nav-btn-next
   position: absolute
   display: block
   width: 27px
@@ -109,17 +112,35 @@
     opacity: 0.6
 
 @media screen and (max-width: 992px)
+  .catalog
+    margin-top: 10px
+
+  .product-list
+    margin-top: 30px
+
   .control-list__item
     &:last-child
       display: block
 
+  .product-list__item
+    width: calc((100% / 2) - 15px)
+    &:nth-child(3),
+    &:last-child
+      display: none
+
+  .product-list__img
+    margin: 0 auto
+
 @media screen and (max-width: 767px)
+  .catalog
+    margin-top: 10px
+
   .control-list__item
     display: block
     padding: 0
     margin: 0
-    padding-left: 12px
-    padding-right: 12px
+    padding-left: 10px
+    padding-right: 10px
     padding-top: 22px
 
     &:last-child
@@ -143,9 +164,7 @@
 
   .product-list__title
     margin-top: 35px
-    // margin-bottom: 5px
     font-size: 15px
 
   .product-wrapper
     margin-top: 15px
-

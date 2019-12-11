@@ -6,7 +6,7 @@ footer
     justify-content: flex-start
 
 .footer
-  padding-top: 30px
+  padding-top: 35px
 
 .footer-container
   padding-left: 0
@@ -87,7 +87,7 @@ footer
 .copyright
   width: 100%
   padding-top: 25px
-  border-top: 1px solid #848181
+  border-top: 1px solid #b6b8b7
 
 .copyright__text,
 .copyright__year
@@ -120,10 +120,24 @@ footer
 .copyright-container
   margin-left: auto
 
+.footer-line
+  .info,
+  .help
+    padding-left: 0
+    padding-right: 0
+
+.copyright__spart
+  margin-bottom: 0
+  a 
+    color: #a234cf
+
 @media screen and (max-width: 992px)
   .footer-container
     padding-left: 16px
     padding-right: 16px
+
+  .footer
+    padding-top: 25px
 
   .help
     display: none
@@ -136,13 +150,41 @@ footer
   .footer-about
     width: auto !important
 
+  .address-wrap
+    margin-left: auto
+    margin-right: auto
+
+  .copyright
+    padding-top: 16px
+
+  .copyright__text
+    font-size: 11px
+
+  .copyright__spart
+    font-family: Tahoma
+    font-size: 12px
+    color: #8b8989
+
+
 @media screen and (max-width: 767px)
+  .footer
+    padding-top: 20px
+
+  .copyright
+    padding-top: 10px
+
   .footer-about,
   .copyright__text
     display: none
 
   .footer-line
     flex-direction: column-reverse
+
+  .footer-social
+    padding-bottom: 20px
+    .footer-title
+      margin-top: 10px
+      margin-bottom: 2px
 
   .address-wrap
     padding-left: 15px
@@ -162,6 +204,10 @@ footer
   .copyright__text,
   .copyright__year
     font-size: 11px
+
+  .copyright__year,
+  .copyright__name
+    margin: 0
     
   .right-line
     width: auto
@@ -169,6 +215,11 @@ footer
   .copyright__spart
     font-size: 12px
     line-height: 18px
+    a 
+      color: #a234cf
 
   .copyright-container
-    width: 80px
+    width: 72px
+
+  .copyright-wrap
+    padding-top: 10px
