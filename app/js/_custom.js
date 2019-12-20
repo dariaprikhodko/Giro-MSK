@@ -55,6 +55,105 @@ document.addEventListener("DOMContentLoaded", function() {
     $('.icon-burger').on('click', function() {
       $(this).closest('.main-nav').toggleClass('main-nav--opened');
       $('body').addClass('stop-scroll');
+      $('.icon-burger').fadeOut();
+    });
+  });
+
+  // var fActive = '';
+ 
+  // function filterColor(color){
+  //  if(fActive != color){
+  //  $('product-list__item').filter('.'+color).slideDown();
+  //  $('product-list__item').filter(':not(.'+color+')').slideUp();
+  //  fActive = color;
+  //  }
+  // }
+   
+  // $('.f-red').click(function(){ filterColor('red'); });
+  // $('.f-blue').click(function(){ filterColor('blue'); });
+  // $('.f-green').click(function(){ filterColor('green'); });
+   
+  // $('.f-all').click(function(){
+  //  $('div').slideDown();
+  //  fActive = 'all';
+  // });
+
+// <div class="wrapper"> 
+//   <ul class="clear">
+//     <li class="button all-i" data-filter="all" tabindex="-1">all</li>
+//     <li class="button site-i" data-filter="site" tabindex="-2">site</li>
+//     <li class="button foto-i" data-filter="foto" tabindex="-3">foto</li>
+//     <li class="button template-i" data-filter="template" tabindex="-4">template</li>
+//   </ul>
+//   <div class="items clear">
+
+//     <div class="item elem site">site</div>
+//     <div class="item elem foto">foto</div>
+//     <div class="item elem site">site</div>
+//     <div class="item elem foto">foto</div>
+//     <div class="item elem template">template</div>
+//     <div class="item elem foto">foto</div>
+//     <div class="item elem template">template</div>
+//     <div class="item elem site">site</div>
+//     <div class="item elem template">template</div>
+//     <div class="item elem site">site</div>
+//     <div class="item elem foto">foto</div>
+//     <div class="item elem site">site</div>
+//     <div class="item elem foto">foto</div>
+//     <div class="item elem template">template</div>
+//     <div class="item elem foto">foto</div>
+//     <div class="item elem template">template</div>
+//     <div class="item elem site">site</div>
+//     <div class="item elem template">template</div>
+//   </div>
+// </div>
+
+  // $(document).ready(function(){
+  //   $('.new-ones').click(function(){
+  //     var value = $(this).attr('data-filter');
+  //     var elem = $('.product-list__item');
+  //     if(value == 'new'){
+  //       $(elem).show("500");
+  //     }
+  //     else{
+  //       $(elem).not("."+value).hide("500");
+  //       $(elem).filter("."+value).show("500");
+  //     }
+  //   });
+  // })
+
+
+
+
+  // slick slider
+  $(document).ready(function(){
+    $('.responsive').slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      prevArrow: $('.nav-btn-prev'),
+      nextArrow: $('.nav-btn-next'),
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2.5,
+            slidesToScroll: 3,
+            infinite: true,
+            arrows: false,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
     });
   });
 

@@ -149,7 +149,7 @@
   padding-left: 180px
   padding-top: 6px
   padding-bottom: 4px
-  border: 1px solid #848181
+  border: 1px solid #e6e8e9
   box-sizing: border-box
 
 .form
@@ -165,8 +165,8 @@
   width: 1px
   height: 26px
   left: 138px
-  top: 2px
-  background-color: #848181
+  top: 5px
+  background-color: #e6e8e9
 
 .form::after
   position: absolute
@@ -180,6 +180,7 @@
   background-repeat: no-repeat
   background-size: 100% 100%
   font-size: 0
+  opacity: 0.6
 
 .form-deco
   position: relative
@@ -234,6 +235,8 @@
 .navigation-list,
 .control-list
   display: flex
+  padding: 0
+  padding-left: 13px
   width: 100%
   list-style: none
   background-color: #a234cf
@@ -243,11 +246,11 @@
 .navigation-list__item,
 .control-list__item
   position: relative
-  margin-right: 30px
-  padding-top: 15px
-  padding-bottom: 21px
-  padding-left: 10px
-  padding-right: 12px
+  // margin-right: 30px
+  padding-top: 17px
+  padding-bottom: 17px
+  padding-left: 28px
+  padding-right: 28.3px
   transform: skew(-20deg)
   transition: all .2s ease
 
@@ -300,22 +303,27 @@
 .navigation-list__item::after
   position: absolute
   content: ""
-  display: none
+  display: block
   width: 8px
   height: 8px
   left: 0
   top: 40%
-  background-image: url("../img/_src/cube.svg")
+  background-image: url("../img/_src/cube.png")
   background-repeat: no-repeat
   background-size: 100% 100%
   font-size: 0
-  transform: rotate(-90deg)
+  transform: rotate(-180deg)
 
 .navigation-list__item:hover::after
-  display: block
+  display: none
+
+.orange::after,
+.gyro::after
+  display: none
 
 .ask__wrap
   position: relative
+  margin-top: -10px
   display: flex
   svg
     position: absolute
@@ -501,35 +509,49 @@
     display: flex
     flex-direction: column
     width: 290px
-    min-height: 51px
+    min-height: 56px
     margin: 0 auto
     font-size: 18px
     line-height: 40px
     background-color: #a234cf
+    z-index: 1000
+    overflow: hidden
 
-    .main-nav__list 
+    .main-nav__list
       list-style: none
       margin: 0
       padding: 0
+
+  .main-nav--opened
+    position: absolute
+    top: -167px
+    left: -16px
+    width: 236px
+    min-height: 100vh
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.35), inset 0 3px 7px rgba(0, 0, 0, 0.5)
+
 
   .nav-menu
     flex-direction: column
 
   .nav-menu__item
     padding: 0
-    a 
-      display: block
-      padding: 8px 8px
-      color: #ffffff
-      text-transform: uppercase
-      text-decoration: none
-      text-align: left
-      border-bottom: 1px solid rgba(0, 0, 0, 0.2)
-      font-size: 11px
+    margin-right: 0
 
-      &:hover
-        background-color: #6d1679
-        text-decoration: none
+  .nav-menu__item a 
+    display: block
+    padding: 8px 8px
+    color: #ffffff
+    text-transform: uppercase
+    text-decoration: none
+    text-align: left
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+    font-size: 11px
+
+    &:hover,
+    &:active
+      background-color: #6d1679
+      text-decoration: none
 
   .main-nav--closed .nav-menu__item 
     display: none

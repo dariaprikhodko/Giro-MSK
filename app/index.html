@@ -10,6 +10,7 @@
   <link rel="icon" href="img/favicon.png">
   <meta property="og:image" content="img/@1x/preview.jpg">
   <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
 
 </head>
 
@@ -116,6 +117,9 @@
                 <li class="nav-menu__item">
                   <a href="#">Контакты</a>
                 </li>
+                <li class="nav-menu__item">
+                  <a href="#">Гироскутеры</a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -184,7 +188,7 @@
       <div class="row align-items-center navigation-mobile">
         <div class="col-lg-12 d-none d-md-block d-lg-block">
           <ul class="navigation-list">
-            <li class="navigation-list__item">
+            <li class="navigation-list__item gyro">
               <a href="#">Гироскутеры</a>
             </li>
             <li class="navigation-list__item">
@@ -343,26 +347,26 @@
         <div class="row no-gutters">
           <div class="col-lg-12">
             <ul class="control-list d-flex">
-              <li class="control-list__item">
+              <li class="control-list__item new-ones" data-filter="new">
                 <a href="#">Новинки</a>
               </li>
-              <li class="control-list__item">
+              <li class="control-list__item popular-ones" data-filter="popular">
                 <a href="#">Популярное</a>
               </li>
-              <li class="control-list__item">
-                <a href="#">Товары со скидкой</a>
+              <li class="control-list__item discount-ones">
+                <a href="#">Товары со&nbsp;скидкой</a>
               </li>
             </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
             <ul class="control-buttons d-none d-lg-block">
               <li class="nav-btn-prev"></li>
               <li class="nav-btn-next"></li>
-            </ul> 
-            <ul class="product-list d-flex justify-content-between">
-              <li class="product-list__item new-flag">
+            </ul>
+          </div>
+        </div>
+        <div class="row product-slider">
+          <div class="col-lg-12 px-0 product-slider__wrapper">
+            <div class="product-list responsive my-shuffle-container">
+              <div class="product-list__item new-flag" data-groups='["new"]'>
                 <picture>
                   <source media="(max-width: 992px)" srcset="img/_src/bicycle@mobile.png">
                   <img src="img/_src/bicycle.png" srcset="img/_src/bicycle.png" alt="Фото товара" class="product-list__img">
@@ -373,10 +377,10 @@
                 <span class="product-list__description">Горный велосипед</span>
                 <div class="product-wrapper d-flex">
                   <button class="button button-green">Заказать</button>
-                  <span class="product-list__price">22 799 руб.</span>
+                  <span class="product-list__price">22 799 <span class="product-list__rub">руб.</span></span>
                 </div>
-              </li>
-              <li class="product-list__item discount-flag">
+              </div>
+              <div class="product-list__item discount-flag" data-groups='["discount"]'>
                 <img src="img/_src/gyro1.png" alt="Фото товара" width="235" height="160" class="product-list__img">
                 <h4 class="product-list__title">
                   Smart Balance K3 (желтый)
@@ -386,11 +390,11 @@
                   <button class="button button-green old">Заказать</button>
                   <div class="price-wrap">
                     <span class="product-list__old">22 400 руб.</span>
-                    <span class="product-list__price">13 800 руб.</span>
+                    <span class="product-list__price">13 800 <span class="product-list__rub">руб.</span></span>
                   </div>
                 </div>
-              </li>
-              <li class="product-list__item">
+              </div>
+              <div class="product-list__item">
                 <img src="img/_src/gyro2.png" alt="Фото товара" width="235" height="160" class="product-list__img">
                 <h4 class="product-list__title">
                   Smart Balance K3 (желтый)
@@ -398,10 +402,10 @@
                 <span class="product-list__description">Гироскутер</span>
                 <div class="product-wrapper d-flex">
                   <button class="button button-green">Заказать</button>
-                  <span class="product-list__price">17 400 руб.</span>
+                  <span class="product-list__price">17 400 <span class="product-list__rub">руб.</span></span>
                 </div>
-              </li>
-              <li class="product-list__item">
+              </div>
+              <div class="product-list__item">
                 <img src="img/_src/watch.png" alt="Фото товара" width="235" height="160" class="product-list__img">
                 <h4 class="product-list__title">
                   Sony SmartWatch 3 SWR50
@@ -409,10 +413,21 @@
                 <span class="product-list__description">Смарт-часы</span>
                 <div class="product-wrapper d-flex">
                   <button class="button button-green">Заказать</button>
-                  <span class="product-list__price">24 899 р</span>
+                  <span class="product-list__price">24 899 <span class="product-list__rub">руб.</span></span>
                 </div>
-              </li>
-            </ul>
+              </div>
+              <div class="product-list__item">
+                <img src="img/_src/watch.png" alt="Фото товара" width="235" height="160" class="product-list__img">
+                <h4 class="product-list__title">
+                  Sony SmartWatch 3 SWR50
+                </h4>
+                <span class="product-list__description">Смарт-часы</span>
+                <div class="product-wrapper d-flex">
+                  <button class="button button-green">Заказать</button>
+                  <span class="product-list__price">24 899 <span class="product-list__rub">руб.</span></span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -547,7 +562,7 @@
           <div class="col-md-9 col-lg-6 right-line">
             <div class="copyright-wrap">
               <p class="copyright__year">©2010-2016 </p>
-              <p class="copyright__name">|GIRO-MSK</p>
+              <p class="copyright__name">| GIRO-MSK</p>
             </div>
             <p class="copyright__text">
               Любое копирование информации не для нашего промо запрещены без письменного разрешения.
@@ -573,8 +588,7 @@
     <div class="contact-popup fixed-overlay">
       <div class="contact-popup contact-popup--modal">
         <div class="popup-wrap">
-          <button class="button-close button" aria-label="кнопка закрытия слайда">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="18" viewBox="0 0 20 18"><g><g><image width="20" height="18" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAACUUlEQVQ4T6VU32vTUBQ+N6mtq2lCm2Vxq06KD/PP8Wn4sgfXPrSWoeKqyGTUid3WCa7Fh+qUMRD/Iv8Acf2VpD+yFdqi7Y6cmJQsjY7phQs3Oed+5zvnfPcw+M+FiAwAaCNjzPr452WDAQE5IBYgIl4BgBGdyUiObqfLRHQAg4yxH85FROQAgAeAM3tbJncQRCQ7RSafyXIAA4yxkcMMEWe2Pxz2W90T2Ezfj0mSZNo3rEw6nUH89cfK96gowZK8GlheZmNvylaKLkA+t7M/qhoGqOocvMqsKpFIpE2XDMO4tnv4pVfTdLihKJC9d3cmkUgMzwF6a4SIAdM0hfz7o25d1+GWIsOLTJKYnqwXS2a12YzcVOfh5VoqHg6Hm+60idZUAwiQSmCaZnSr8umrprcWVFmGMTDQ2m2YVRXYfpBSBUEwvLUlQM5bWEScNEnXdaFw8LlXN3TgeR7iUQmeZ5KSLMunvrLxMqTuMcbGrnpyjwv747qhAc8HIB4VYW8jRz5nfmSmhG1LJgAAP9uDwUKhXKlqugG/UwYrZUVVG/nUyh1i6a6/RcKnIfSPAOFRsXTc0A11cTYGz7LZpXE/VNs7Kp8eNxrcojoP+bXkdUEQtCkd+oByuZ3SoNFpBWVZhq10+rYkXf1mpxlaL5aHNU0j2eBmNjknimLLVza2+i3l598ddHv9vrSRWpFisVjPEzT4ZPftkDEO3jx9KDLGJvZzKbu7i4gh+9nRG59MFGeqkLToTD5Tw+Eyj/8iXy/DKU1eBOC1/3UeOsL9E6jfiPsFgnkrII4xH2cAAAAASUVORK5CYII="/></g></g></svg>
+          <button class="button-close" aria-label="кнопка закрытия слайда">
           </button>
           <h2 class="contact-popup__title">
             Обратный звонок
@@ -600,6 +614,8 @@
 
   <script src="js/scripts.min.js"></script>
   <script src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="slick/slick/slick.min.js"></script>
+
 
 </body>
 </html>

@@ -66,7 +66,7 @@ body
 	width: 100%
 
 .parent // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
-	background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
+	background-image: url(data:image/gifbase64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
 
 .visually-hidden:not(:focus):not(:active),
 input:focus.visually-hidden,
@@ -104,38 +104,35 @@ input:active.visually-hidden
   position: relative
   overflow: hidden
 
-.new-flag::after 
-  content: "Новинка"
+.new-flag::after
   position: absolute
-  top: 15px
-  left: 0
+  content: ""
   display: block
   width: 78px
   height: 16px
-  font-size: 10px
-  text-transform: uppercase
-  text-align: center
-  vertical-align: middle
-  color: #ffffff
-  background-color: #ff0700
+  left: 0
+  top: 15px
+  background-image: url("../img/_src/new.png")
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  font-size: 0
 
 .discount-flag
   position: relative
   overflow: hidden
 
 .discount-flag::after 
-  content: "- 20%"
   position: absolute
-  top: 15px
-  left: 0
+  content: ""
   display: block
   width: 78px
   height: 16px
-  font-size: 12px
-  text-align: center
-  vertical-align: middle
-  color: #ffffff
-  background-color: #ff7f00
+  left: 0
+  top: 15px
+  background-image: url("../img/_src/discount.png")
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  font-size: 0
 
 .stop-scroll
   overflow: hidden
