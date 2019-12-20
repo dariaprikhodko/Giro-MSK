@@ -65,7 +65,6 @@ document.addEventListener("DOMContentLoaded", function() {
     $('.control-list__item').click(function(event) {
       event.preventDefault();
       var filter = $(this).data('filter')
-      console.log(filter)
       $('.control-list__item').each(function() {
         var controlType = $(this).data('filter');
         if (controlType === filter) {
