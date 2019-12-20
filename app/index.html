@@ -347,13 +347,13 @@
         <div class="row no-gutters">
           <div class="col-lg-12">
             <ul class="control-list d-flex">
-              <li class="control-list__item new-ones" data-filter="new">
+              <li class="control-list__item new-ones" val="off" filter="new">
                 <a href="#">Новинки</a>
               </li>
-              <li class="control-list__item popular-ones" data-filter="popular">
+              <li class="control-list__item popular-ones" val="off" filter="pop">
                 <a href="#">Популярное</a>
               </li>
-              <li class="control-list__item discount-ones">
+              <li class="control-list__item discount-ones" val="off" filter="discount">
                 <a href="#">Товары со&nbsp;скидкой</a>
               </li>
             </ul>
@@ -365,8 +365,8 @@
         </div>
         <div class="row product-slider">
           <div class="col-lg-12 px-0 product-slider__wrapper">
-            <div class="product-list responsive my-shuffle-container">
-              <div class="product-list__item new-flag" data-groups='["new"]'>
+            <div class="product-list responsive" id="product-list">
+              <div class="product-list__item new-flag" filter="new">
                 <picture>
                   <source media="(max-width: 992px)" srcset="img/_src/bicycle@mobile.png">
                   <img src="img/_src/bicycle.png" srcset="img/_src/bicycle.png" alt="Фото товара" class="product-list__img">
@@ -380,7 +380,7 @@
                   <span class="product-list__price">22 799 <span class="product-list__rub">руб.</span></span>
                 </div>
               </div>
-              <div class="product-list__item discount-flag" data-groups='["discount"]'>
+              <div class="product-list__item discount-flag" filter="discount">
                 <img src="img/_src/gyro1.png" alt="Фото товара" width="235" height="160" class="product-list__img">
                 <h4 class="product-list__title">
                   Smart Balance K3 (желтый)

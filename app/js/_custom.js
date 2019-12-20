@@ -59,71 +59,52 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-  // var fActive = '';
- 
-  // function filterColor(color){
-  //  if(fActive != color){
-  //  $('product-list__item').filter('.'+color).slideDown();
-  //  $('product-list__item').filter(':not(.'+color+')').slideUp();
-  //  fActive = color;
-  //  }
-  // }
-   
-  // $('.f-red').click(function(){ filterColor('red'); });
-  // $('.f-blue').click(function(){ filterColor('blue'); });
-  // $('.f-green').click(function(){ filterColor('green'); });
-   
-  // $('.f-all').click(function(){
-  //  $('div').slideDown();
-  //  fActive = 'all';
-  // });
-
-// <div class="wrapper"> 
-//   <ul class="clear">
-//     <li class="button all-i" data-filter="all" tabindex="-1">all</li>
-//     <li class="button site-i" data-filter="site" tabindex="-2">site</li>
-//     <li class="button foto-i" data-filter="foto" tabindex="-3">foto</li>
-//     <li class="button template-i" data-filter="template" tabindex="-4">template</li>
-//   </ul>
-//   <div class="items clear">
-
-//     <div class="item elem site">site</div>
-//     <div class="item elem foto">foto</div>
-//     <div class="item elem site">site</div>
-//     <div class="item elem foto">foto</div>
-//     <div class="item elem template">template</div>
-//     <div class="item elem foto">foto</div>
-//     <div class="item elem template">template</div>
-//     <div class="item elem site">site</div>
-//     <div class="item elem template">template</div>
-//     <div class="item elem site">site</div>
-//     <div class="item elem foto">foto</div>
-//     <div class="item elem site">site</div>
-//     <div class="item elem foto">foto</div>
-//     <div class="item elem template">template</div>
-//     <div class="item elem foto">foto</div>
-//     <div class="item elem template">template</div>
-//     <div class="item elem site">site</div>
-//     <div class="item elem template">template</div>
-//   </div>
-// </div>
-
-  // $(document).ready(function(){
-  //   $('.new-ones').click(function(){
-  //     var value = $(this).attr('data-filter');
-  //     var elem = $('.product-list__item');
-  //     if(value == 'new'){
-  //       $(elem).show("500");
-  //     }
-  //     else{
-  //       $(elem).not("."+value).hide("500");
-  //       $(elem).filter("."+value).show("500");
-  //     }
-  //   });
-  // })
+  // фильтр товаров
+  // новинки
+  $(document).ready(function(){
+    $('.control-list__item[filter="new"]').click(function() {
+      if ($(this).attr('val')==='off') {
+        $('.control-list__item[filter]').attr('val', 'off')
+        $(this).attr('val', 'on')
+        $(this).addClass('focused');
+        $('.control-list__item[filter="pop"]').removeClass('focused');
+        console.log('!!!!!!!!')
+        console.log($('.product-list__item'))
+        console.log($('.product-list__item[filter="new"]'))
 
 
+        $('.product-list__item').hide(300);
+        $('.product-list__item[filter="new"]').show(300);
+      }
+    })
+  });
+  // популярное
+  $(document).ready(function(){
+    $('.control-list__item[filter="pop"]').click(function() {
+      if ($(this).attr('val')==='off') {
+        $('.control-list__item[filter]').attr('val', 'off')
+        $(this).attr('val', 'on')
+        $(this).addClass('focused');
+        $('.control-list__item[filter="pop"]').removeClass('focused');
+        $('.product-list > div').hide(300);
+        $('.product-list > div[filter="pop"]').show(300);
+      }
+    })
+  });
 
+  // скидки
+  $(document).ready(function(){
+    $('.control-list__item[filter="discount"]').click(function() {
+      if ($(this).attr('val')==='off') {
+        $('.control-list__item[filter]').attr('val', 'off')
+        $(this).attr('val', 'on')
+        $(this).addClass('focused');
+        $('.control-list__item[filter="pop"]').removeClass('focused');
+        $('.product-list > div').hide(300);
+        $('.product-list > div[filter="discount"]').show(300);
+      }
+    })
+  });
 
   // slick slider
   $(document).ready(function(){
