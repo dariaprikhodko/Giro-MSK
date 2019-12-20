@@ -62,49 +62,32 @@ document.addEventListener("DOMContentLoaded", function() {
   // фильтр товаров
   // новинки
   $(document).ready(function(){
-    $('.control-list__item[filter="new"]').click(function() {
-      if ($(this).attr('val')==='off') {
-        $('.control-list__item[filter]').attr('val', 'off')
-        $(this).attr('val', 'on')
-        $(this).addClass('focused');
-        $('.control-list__item[filter="pop"]').removeClass('focused');
-        console.log('!!!!!!!!')
-        console.log($('.product-list__item'))
-        console.log($('.product-list__item[filter="new"]'))
-
-
-        $('.product-list__item').hide(300);
-        $('.product-list__item[filter="new"]').show(300);
-      }
+    $('.control-list__item').click(function(event) {
+      event.preventDefault();
+      var filter = $(this).data('filter')
+      console.log(filter)
+      $('.control-list__item').each(function() {
+        var controlType = $(this).data('filter');
+        if (controlType === filter) {
+          $(this).addClass('focused');
+        } else {
+          $(this).removeClass('focused');
+        }
+      })
+      $('.product-list__item').each(function() {
+        var itemType = $(this).data('filter');
+        if (itemType === filter) {
+          $(this).show(300);
+          $(this).removeClass('hidden');
+        } else {
+          $(this).hide(300);
+          $(this).addClass('hidden');
+        }
+      })
+      $('.responsive').slick('refresh');
     })
   });
-  // популярное
-  $(document).ready(function(){
-    $('.control-list__item[filter="pop"]').click(function() {
-      if ($(this).attr('val')==='off') {
-        $('.control-list__item[filter]').attr('val', 'off')
-        $(this).attr('val', 'on')
-        $(this).addClass('focused');
-        $('.control-list__item[filter="pop"]').removeClass('focused');
-        $('.product-list > div').hide(300);
-        $('.product-list > div[filter="pop"]').show(300);
-      }
-    })
-  });
-
-  // скидки
-  $(document).ready(function(){
-    $('.control-list__item[filter="discount"]').click(function() {
-      if ($(this).attr('val')==='off') {
-        $('.control-list__item[filter]').attr('val', 'off')
-        $(this).attr('val', 'on')
-        $(this).addClass('focused');
-        $('.control-list__item[filter="pop"]').removeClass('focused');
-        $('.product-list > div').hide(300);
-        $('.product-list > div[filter="discount"]').show(300);
-      }
-    })
-  });
+  
 
   // slick slider
   $(document).ready(function(){

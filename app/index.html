@@ -347,13 +347,13 @@
         <div class="row no-gutters">
           <div class="col-lg-12">
             <ul class="control-list d-flex">
-              <li class="control-list__item new-ones" val="off" filter="new">
+              <li class="control-list__item new-ones" val="off" data-filter="new">
                 <a href="#">Новинки</a>
               </li>
-              <li class="control-list__item popular-ones" val="off" filter="pop">
+              <li class="control-list__item popular-ones" val="off" data-filter="pop">
                 <a href="#">Популярное</a>
               </li>
-              <li class="control-list__item discount-ones" val="off" filter="discount">
+              <li class="control-list__item discount-ones" val="off" data-filter="discount">
                 <a href="#">Товары со&nbsp;скидкой</a>
               </li>
             </ul>
@@ -366,13 +366,13 @@
         <div class="row product-slider">
           <div class="col-lg-12 px-0 product-slider__wrapper">
             <div class="product-list responsive" id="product-list">
-              <div class="product-list__item new-flag" filter="new">
+              <div class="product-list__item new-flag" data-filter="new">
                 <picture>
                   <source media="(max-width: 992px)" srcset="img/_src/bicycle@mobile.png">
                   <img src="img/_src/bicycle.png" srcset="img/_src/bicycle.png" alt="Фото товара" class="product-list__img">
                 </picture>
                 <h4 class="product-list__title">
-                  Aspect Ideal 26 VBR
+                  Aspect Ideal 26 VBR 
                 </h4>
                 <span class="product-list__description">Горный велосипед</span>
                 <div class="product-wrapper d-flex">
@@ -380,7 +380,7 @@
                   <span class="product-list__price">22 799 <span class="product-list__rub">руб.</span></span>
                 </div>
               </div>
-              <div class="product-list__item discount-flag" filter="discount">
+              <div class="product-list__item discount-flag" data-filter="pop">
                 <img src="img/_src/gyro1.png" alt="Фото товара" width="235" height="160" class="product-list__img">
                 <h4 class="product-list__title">
                   Smart Balance K3 (желтый)
@@ -394,7 +394,7 @@
                   </div>
                 </div>
               </div>
-              <div class="product-list__item">
+              <div class="product-list__item" data-filter="new">
                 <img src="img/_src/gyro2.png" alt="Фото товара" width="235" height="160" class="product-list__img">
                 <h4 class="product-list__title">
                   Smart Balance K3 (желтый)
@@ -405,7 +405,7 @@
                   <span class="product-list__price">17 400 <span class="product-list__rub">руб.</span></span>
                 </div>
               </div>
-              <div class="product-list__item">
+              <div class="product-list__item" data-filter="discount">
                 <img src="img/_src/watch.png" alt="Фото товара" width="235" height="160" class="product-list__img">
                 <h4 class="product-list__title">
                   Sony SmartWatch 3 SWR50
@@ -416,7 +416,18 @@
                   <span class="product-list__price">24 899 <span class="product-list__rub">руб.</span></span>
                 </div>
               </div>
-              <div class="product-list__item">
+              <div class="product-list__item" data-filter="discount">
+                <img src="img/_src/watch.png" alt="Фото товара" width="235" height="160" class="product-list__img">
+                <h4 class="product-list__title">
+                  Sony SmartWatch 3 SWR50
+                </h4>
+                <span class="product-list__description">Смарт-часы</span>
+                <div class="product-wrapper d-flex">
+                  <button class="button button-green">Заказать</button>
+                  <span class="product-list__price">24 899 <span class="product-list__rub">руб.</span></span>
+                </div>
+              </div>
+              <div class="product-list__item" data-filter="pop">
                 <img src="img/_src/watch.png" alt="Фото товара" width="235" height="160" class="product-list__img">
                 <h4 class="product-list__title">
                   Sony SmartWatch 3 SWR50
